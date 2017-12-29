@@ -1,0 +1,52 @@
+@import '~style/helpers';
+
+.header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 56px;
+	padding: 0;
+	background: #000000;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	z-index: 50;
+	display: flex;
+	justify-content: space-between;
+
+	.brand{
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+
+		img{
+			background-color: #fff;
+			margin: 0 .25em;
+			border-radius: .25em;
+		}
+
+		span{
+			font-weight: bold;
+			color: #FFF;
+		}
+	}
+
+	nav {
+
+		a {
+			display: inline-block;
+			height: 56px;
+			line-height: 56px;
+			padding: 0 15px;
+			min-width: 50px;
+			text-align: center;
+			background: rgba(255,255,255,0);
+			text-decoration: none;
+			color: #EEE;
+			will-change: background-color;
+
+			&:hover, &:active {
+				background: rgba(255,255,255,0.3);
+			}
+		}
+	}
+}
