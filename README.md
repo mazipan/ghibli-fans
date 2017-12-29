@@ -2,6 +2,8 @@
 
 🐰 Enter The Ghibli's World
 
+![Ghibli-Fans](https://github.com/mazipan/ghibli-fans/blob/master/screenshoot.png?raw=true)
+
 ## Demo
 
 https://mazipan.github.io/ghibli-fans/
