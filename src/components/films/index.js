@@ -17,10 +17,18 @@ class Films extends Component {
 					<li key={item.id} class={style.film}>
 						<Link href={`/film/${item.id}`} class={style.card}>
 							<div class={style.card__left}>
-								<img src="assets/icons/favicon-32x32.png" />
-								<div class={style.rating}>{item.rt_score}</div>
+								<img src={item.image} />
 							</div>
-							{item.title}
+							<div class={style.card__right}>
+								<div class={style.title}>
+									{item.title}
+
+									<span class={style.rating}>&#9734; {item.rt_score}</span>
+								</div>
+
+								<div class={style.text}>Date : {item.release_date}</div>
+								<div class={style.text}>Director : {item.director}</div>
+							</div>
 						</Link>
 					</li>
 				))}

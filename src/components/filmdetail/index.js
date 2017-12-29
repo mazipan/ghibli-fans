@@ -1,4 +1,5 @@
 import { h, Component } from "preact";
+import style from "./style.less";
 
 import { connect } from "preact-redux";
 import { loadFilm } from "../../actions/";
@@ -10,14 +11,35 @@ class FilmDetail extends Component {
 
 	render() {
 		return (
-			<div>
-				<h3>{this.props.film.title}</h3>
-				<div>Director : {this.props.film.director}</div>
-				<div>Producer : {this.props.film.producer}</div>
-				<div>release_date : {this.props.film.release_date}</div>
-				<div>rt_score : {this.props.film.rt_score}</div>
+			<div class={style.film}>
+				<img src={this.props.film.image} />
 
-				{this.props.film.description}
+				<div class={style.desc}>
+					<div class={style.title}>{this.props.film.title}</div>
+					<div class={style.text}>
+						Rating :{" "}
+						<span class={style.rating}>&#9734; {this.props.film.rt_score}</span>
+					</div>
+					<div class={style.text}>Date : {this.props.film.release_date}</div>
+					<div class={style.text}>Director : {this.props.film.director}</div>
+					<div class={style.text}>Producer : {this.props.film.producer}</div>
+					<div class={style.text}>
+						Description : {this.props.film.description}
+					</div>
+
+					<div class={style.link__wrapper}>
+						<a class={style.link} href={this.props.film.imdb} target="_blank">
+							<i class="fa fa-imdb" /> IMDB
+						</a>
+						<a
+							class={style.link}
+							href={this.props.film.streaming}
+							target="_blank"
+						>
+							<i class="fa fa-play-circle-o" /> Streaming
+						</a>
+					</div>
+				</div>
 			</div>
 		);
 	}

@@ -19,25 +19,42 @@
 
     display: flex;
     justify-content: flex-start;
-		align-items: center;
+		align-items: flex-start;
 
 		&__left{
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
+			margin-right: 1em;
+		}
+
+		&__right{
+			margin-right: 1em;
+			text-align: left;
 		}
 
 		img{
 			background-color: #5b6fff;
 			margin: 0 .25em;
 			border-radius: .25em;
+			height: 150px;
 		}
+	}
+
+	.title{
+		font-size: 20px;
+		line-height: 2;
+		font-weight: bold;
+	}
+
+	.text{
+		font-size: 12px;
+		margin-right: .25em;
+		margin-top: .25em;
 	}
 
 	.rating{
 		background-color: yellow;
-		margin: 0 .25em;
+		margin-left: 1em;
     border-radius: .25em;
     padding: .25em;
+		font-size: 14px;
 	}
 }

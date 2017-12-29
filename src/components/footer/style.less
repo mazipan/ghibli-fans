@@ -1,5 +1,9 @@
 @import '~style/helpers';
 
+.active{
+	background: rgba(255,255,255,0.3);
+}
+
 .footer {
 	position: fixed;
 	left: 0;
@@ -10,22 +14,36 @@
 	background: #000;
 	box-shadow: 0 0 5px rgba(0,0,0,.5);
 	z-index: 50;
-	display: flex;
-	justify-content: center;
 
 	nav {
-		display: flex;
-		justify-content: center;
+
+		display: table;
+		width: 100%;
+
+		.link{
+      width: 20%;
+      display: table-cell;
+      text-align: center;
+		}
+
+		.text{
+			font-size: 13px;
+			line-height: 1.5;
+			@media (max-width: 640px){
+				display: none;
+			}
+		}
+
+		i{
+      font-size: 24px;
+		}
 
 		a {
-			height: 56px;
-			line-height: 56px;
-			padding: 0 15px;
-			min-width: 50px;
-			text-align: center;
-			background: rgba(255,255,255,0);
-			text-decoration: none;
-			color: #EEE;
+      position: relative;
+			display: block;
+			padding: .9em 0em;
+      color: #fff;
+      text-decoration: none;
 			will-change: background-color;
 
 			&:hover, &:active {

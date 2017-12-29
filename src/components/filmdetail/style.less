@@ -1,0 +1,57 @@
+@import '~style/helpers';
+
+.film{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+
+	@media (max-width: 640px){
+		flex-direction: column;
+		align-items: flex-start;
+		margin-top: .5em;
+	}
+
+	img{
+		background-color: #5b6fff;
+		margin: 0 .25em;
+		border-radius: .25em;
+		height: 200px;
+	}
+
+	.desc{
+		margin-left: 1em;
+		text-align: left;
+	}
+
+	.title{
+		font-size: 20px;
+		line-height: 2;
+		font-weight: bold;
+	}
+
+	.text{
+		font-size: 12px;
+		margin-right: .25em;
+		margin-top: .25em;
+	}
+
+	.rating{
+		background-color: yellow;
+    border-radius: .25em;
+    padding: .25em;
+		font-size: 14px;
+	}
+
+	.link{
+		&__wrapper{
+			margin-top: 1.5em;
+		}
+
+		background-color: #000;
+		color: #fff;
+		padding: .5em 2em;
+		margin-right: .5em;
+		text-decoration: none;
+
+	}
+}
