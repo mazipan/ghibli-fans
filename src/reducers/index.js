@@ -1,8 +1,11 @@
-import { combineReducers } from 'redux';
-import { items, itemsHasErrored, itemsIsLoading } from './items';
+import { combineReducers } from "redux";
+
+import { hasErrored, isLoading } from "./common";
+import { film, films } from "./films";
 
 export default combineReducers({
-	items,
-	itemsHasErrored,
-	itemsIsLoading
+	hasErrored,
+	isLoading,
+	film,
+	films
 });

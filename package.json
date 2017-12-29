@@ -12,7 +12,8 @@
     "test:watch": "npm run -s test -- --watch",
     "lint": "eslint src test",
     "publish": "node ./gh-publish.js",
-    "dist": "npm run build && npm run publish"
+    "format": "prettier-standard 'src/**/*.js'",
+    "dist": "npm run format && npm run build && npm run publish"
   },
   "keywords": [
     "preact",
@@ -78,6 +79,7 @@
     "offline-plugin": "^4.9.0",
     "postcss-loader": "^2.0.9",
     "preact-jsx-chai": "^2.2.1",
+    "prettier-standard": "8.0.0",
     "raw-loader": "^0.5.1",
     "regenerator-runtime": "^0.11.1",
     "replace-bundle-webpack-plugin": "^1.0.0",
@@ -91,6 +93,8 @@
     "webpack-dev-server": "^2.9.7"
   },
   "dependencies": {
+    "lodash": "4.17.4",
+    "history": "4.7.2",
     "preact": "^8.2.7",
     "preact-compat": "^3.17.0",
     "preact-render-to-string": "^3.7.0",

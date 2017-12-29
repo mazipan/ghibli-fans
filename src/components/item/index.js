@@ -1,29 +1,24 @@
-import { h, Component } from 'preact';
+import { h, Component } from "preact";
 
-import { connect } from 'preact-redux';
-import { itemsFetchData } from '../../actions/';
+import { connect } from "preact-redux";
+import { itemsFetchData } from "../../actions/";
 
 class Item extends Component {
 	componentDidMount() {
-		console.log('fetch data');
-		this.props.fetchData('http://599167402df2f40011e4929a.mockapi.io/items');
+		console.log("fetch data");
+		this.props.fetchData("http://599167402df2f40011e4929a.mockapi.io/items");
 	}
 
 	render() {
 		return (
 			<ul>
-				{this.props.items.map((item) => (
-					<li key={item.id}>
-						{item.label}
-					</li>
-				))}
+				{this.props.items.map(item => <li key={item.id}>{item.label}</li>)}
 			</ul>
 		);
 	}
 }
 
-
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
 	return {
 		items: state.items,
 		hasErrored: state.itemsHasErrored,
@@ -31,9 +26,9 @@ const mapStateToProps = (state) => {
 	};
 };
 
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = dispatch => {
 	return {
-		fetchData: (url) => dispatch(itemsFetchData(url))
+		fetchData: url => dispatch(itemsFetchData(url))
 	};
 };
 

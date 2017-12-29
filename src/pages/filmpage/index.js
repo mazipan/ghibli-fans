@@ -1,9 +1,9 @@
 import { h, Component } from "preact";
 import style from "./style.less";
 
-import Films from "components/films";
+import FilmDetail from "components/filmdetail";
 
-export default class Home extends Component {
+export default class FilmPage extends Component {
 	render() {
 		return (
 			<main class={style.home}>
@@ -11,7 +11,7 @@ export default class Home extends Component {
 					<img src="assets/icons/android-icon-192x192.png" />
 				</div>
 
-				<Films />
+				<FilmDetail filmid={this.props.filmid} />
 			</main>
 		);
 	}

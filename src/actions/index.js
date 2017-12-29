@@ -1,40 +1,32 @@
-export function itemsHasErrored(bool) {
-	return {
-		type: 'ITEMS_HAS_ERRORED',
-		hasErrored: bool
-	};
-}
+import { CALL_API } from "../middleware/api";
+import * as Constant from "../constant";
 
-export function itemsIsLoading(bool) {
-	return {
-		type: 'ITEMS_IS_LOADING',
-		isLoading: bool
-	};
-}
+const fetchFilms = () => ({
+	[CALL_API]: {
+		types: [
+			Constant.FILM_REQUEST,
+			Constant.FILMS_SUCCESS,
+			Constant.FILM_FAILURE
+		],
+		endpoint: `films/`
+	}
+});
 
-export function itemsFetchDataSuccess(items) {
-	return {
-		type: 'ITEMS_FETCH_DATA_SUCCESS',
-		items
-	};
-}
+const fetchFilm = filmId => ({
+	[CALL_API]: {
+		types: [
+			Constant.FILM_REQUEST,
+			Constant.FILM_SUCCESS,
+			Constant.FILM_FAILURE
+		],
+		endpoint: `films/${filmId}`
+	}
+});
 
-export function itemsFetchData(url) {
-	return (dispatch) => {
-		dispatch(itemsIsLoading(true));
+export const loadFilm = filmId => dispatch => {
+	return dispatch(fetchFilm(filmId));
+};
 
-		fetch(url)
-			.then((response) => {
-				if (!response.ok) {
-					throw Error(response.statusText);
-				}
-
-				dispatch(itemsIsLoading(false));
-
-				return response;
-			})
-			.then((response) => response.json())
-			.then((items) => dispatch(itemsFetchDataSuccess(items)))
-			.catch(() => dispatch(itemsHasErrored(true)));
-	};
-}
+export const loadFilms = () => dispatch => {
+	return dispatch(fetchFilms());
+};

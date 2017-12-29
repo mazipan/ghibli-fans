@@ -1,0 +1,6 @@
+export const RESET_ERROR_MESSAGE = "RESET_ERROR_MESSAGE";
+
+export const FILM_REQUEST = "FILM_REQUEST";
+export const FILM_SUCCESS = "FILM_SUCCESS";
+export const FILMS_SUCCESS = "FILMS_SUCCESS";
+export const FILM_FAILURE = "FILM_FAILURE";
