@@ -23,11 +23,8 @@ class Films extends Component {
 								<div class={style.title}>
 									{item.title}
 
-									<span class={style.rating}>&#9734; {item.rt_score}</span>
+									<span class={style.text}>({item.release_date})</span>
 								</div>
-
-								<div class={style.text}>Date : {item.release_date}</div>
-								<div class={style.text}>Director : {item.director}</div>
 							</div>
 						</Link>
 					</li>

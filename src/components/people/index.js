@@ -17,10 +17,10 @@ class People extends Component {
 					<li key={item.id} class={style.person}>
 						<Link href={`/people/${item.id}`} class={style.card}>
 							<div class={style.card__left}>
-								{item.gender === 'male' ? (
-									<i class="icon fa fa-male"></i>
+								{item.gender === 'Male' ? (
+									<i class="fa fa-male"></i>
 								) : (
-									<i class="icon fa fa-female"></i>
+									<i class="fa fa-female"></i>
 								)}
 							</div>
 							<div class={style.card__right}>

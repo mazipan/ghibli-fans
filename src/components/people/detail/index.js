@@ -13,10 +13,10 @@ class PersonDetail extends Component {
 		return (
 			<div class={style.person}>
 
-				{this.props.person.gender === 'male' ? (
-					<i class="icon fa fa-male"></i>
+				{this.props.person.gender === 'Male' ? (
+					<i class="fa fa-male"></i>
 				) : (
-					<i class="icon fa fa-female"></i>
+					<i class="fa fa-female"></i>
 				)}
 
 				<div class={style.desc}>

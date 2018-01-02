@@ -2,7 +2,7 @@ import * as ActionTypes from "@/constant";
 
 export function person(state = {}, action) {
 	switch (action.type) {
-		case ActionTypes.PERSON_DETAIL_SUCCESS:
+		case ActionTypes.PEOPLE_DETAIL_SUCCESS:
 			if (action.fromCache) {
 				return action.cache;
 			}
