@@ -1,4 +1,5 @@
 import { CALL_API } from "../middleware/api";
+import { getCache } from "../cache";
 import * as Constant from "../constant";
 
 const fetchFilms = () => ({
@@ -8,7 +9,8 @@ const fetchFilms = () => ({
 			Constant.FILMS_SUCCESS,
 			Constant.FILM_FAILURE
 		],
-		endpoint: `films/`
+		endpoint: `films/`,
+		cachekey: Constant.CACHE_FILMS
 	}
 });
 
@@ -19,14 +21,35 @@ const fetchFilm = filmId => ({
 			Constant.FILM_SUCCESS,
 			Constant.FILM_FAILURE
 		],
-		endpoint: `films/${filmId}`
+		endpoint: `films/${filmId}`,
+		cachekey: filmId
 	}
 });
 
 export const loadFilm = filmId => dispatch => {
-	return dispatch(fetchFilm(filmId));
+	let cache = getCache(filmId);
+	if (!cache) {
+		return dispatch(fetchFilm(filmId));
+	}
+
+	const action = {
+		type: Constant.FILM_SUCCESS,
+		cache: JSON.parse(cache),
+		fromCache: true
+	};
+	return dispatch(action);
 };
 
 export const loadFilms = () => dispatch => {
-	return dispatch(fetchFilms());
+	let cache = getCache(Constant.CACHE_FILMS);
+	if (!cache) {
+		return dispatch(fetchFilms());
+	}
+
+	const action = {
+		type: Constant.FILMS_SUCCESS,
+		cache: JSON.parse(cache),
+		fromCache: true
+	};
+	return dispatch(action);
 };

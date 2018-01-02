@@ -1,8 +1,10 @@
+import { saveCache } from "../cache";
+
 const API_ROOT = "https://ghibliapi.herokuapp.com/";
 
 // Fetches an API response and normalizes the result JSON according to schema.
 // This makes every API response have the same shape, regardless of how nested it was.
-const callApi = endpoint => {
+const callApi = (endpoint, cachekey) => {
 	const fullUrl =
 		endpoint.indexOf(API_ROOT) === -1 ? API_ROOT + endpoint : endpoint;
 
@@ -12,6 +14,8 @@ const callApi = endpoint => {
 			if (!response.ok) {
 				return Promise.reject(json);
 			}
+
+			saveCache(cachekey, JSON.stringify(json));
 			return json;
 		})
 	);
@@ -27,9 +31,8 @@ export default store => next => action => {
 	if (typeof callAPI === "undefined") {
 		return next(action);
 	}
-
 	let { endpoint } = callAPI;
-	const { types } = callAPI;
+	const { types, cachekey } = callAPI;
 
 	if (typeof endpoint === "function") {
 		endpoint = endpoint(store.getState());
@@ -52,7 +55,7 @@ export default store => next => action => {
 
 	next(actionWith({ type: requestType }));
 
-	return callApi(endpoint).then(
+	return callApi(endpoint, cachekey).then(
 		response =>
 			next(
 				actionWith({

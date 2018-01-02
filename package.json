@@ -13,7 +13,7 @@
     "lint": "eslint src test",
     "publish": "node ./gh-publish.js",
     "format": "prettier-standard 'src/**/*.js'",
-    "dist": "npm run format && npm run build && npm run publish"
+    "dist": "npm run format && npm run build"
   },
   "keywords": [
     "preact",
