@@ -15,6 +15,15 @@ import FilmPage from "pages/films/detail";
 import PeoplePage from "pages/people/list";
 import PersonPage from "pages/people/detail";
 
+import LocationsPage from "pages/locations/list";
+import LocationPage from "pages/locations/detail";
+
+import SpeciesPage from "pages/species/list";
+import SpeciesDetailPage from "pages/species/detail";
+
+import VehiclesPage from "pages/vehicles/list";
+import VehiclePage from "pages/vehicles/detail";
+
 export default class App extends Component {
 	state = {
 		appName: "Ghibli Fans"
@@ -34,13 +43,22 @@ export default class App extends Component {
 					<Header appName={this.state.appName} />
 
 					<Router history={createHashHistory()}>
-						<FilmsPage path="/" appName={this.state.appName} />
+						<FilmsPage path="/" />
 
-						<FilmsPage path="/films" appName={this.state.appName} />
-						<FilmPage path="/films/:filmid" appName={this.state.appName} />
+						<FilmsPage path="/films" />
+						<FilmPage path="/films/:filmid" />
 
-						<PeoplePage path="/people" appName={this.state.appName} />
-						<PersonPage path="/people/:filmid" appName={this.state.appName} />
+						<PeoplePage path="/people" />
+						<PersonPage path="/people/:filmid" />
+
+						<LocationsPage path="/locations" />
+						<LocationPage path="/locations/:filmid" />
+
+						<SpeciesPage path="/species" />
+						<SpeciesDetailPage path="/species/:filmid" />
+
+						<VehiclesPage path="/vehicles" />
+						<VehiclePage path="/vehicles/:filmid" />
 					</Router>
 
 					<Footer appName={this.state.appName} />
