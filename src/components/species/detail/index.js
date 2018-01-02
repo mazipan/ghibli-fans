@@ -2,32 +2,29 @@ import { h, Component } from "preact";
 import style from "./style.less";
 
 import { connect } from "preact-redux";
-import { loadPersonDetail } from "@/actions/";
+import { loadSpeciesDetail } from "@/actions/";
 
-class PersonDetail extends Component {
+class SpeciesDetail extends Component {
 	componentDidMount() {
-		this.props.loadPersonDetail(this.props.id);
+		this.props.loadSpeciesDetail(this.props.id);
 	}
 
 	render() {
 		return (
-			<div class={style.person}>
-				{this.props.person.gender === "Male" ? (
-					<i class="fa fa-male" />
-				) : (
-					<i class="fa fa-female" />
-				)}
+			<div class={style.species}>
+				<i class="fa fa-reddit-alien" />
 
 				<div class={style.desc}>
-					<div class={style.title}>{this.props.person.name}</div>
-					<div class={style.text}>Age : {this.props.person.age}</div>
+					<div class={style.title}>{this.props.species.name}</div>
 					<div class={style.text}>
-						Eye Color : {this.props.person.eye_color}
+						<b>Age</b> : {this.props.species.classification}
 					</div>
 					<div class={style.text}>
-						Hair Color : {this.props.person.hair_color}
+						<b>Eye Color</b> : {this.props.species.eye_color}
 					</div>
-					<div class={style.text}>Species : {this.props.person.species}</div>
+					<div class={style.text}>
+						<b>Hair Color</b> : {this.props.species.hair_color}
+					</div>
 				</div>
 			</div>
 		);
@@ -42,11 +39,11 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
 	return {
-		loadPersonDetail: id => dispatch(loadPersonDetail(id))
+		loadSpeciesDetail: id => dispatch(loadSpeciesDetail(id))
 	};
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(PersonDetail);
+export default connect(mapStateToProps, mapDispatchToProps)(SpeciesDetail);
 
 // {
 // 	"id": "af3910a6-429f-4c74-9ad5-dfe1c4aa04f2",

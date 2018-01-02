@@ -2,32 +2,29 @@ import { h, Component } from "preact";
 import style from "./style.less";
 
 import { connect } from "preact-redux";
-import { loadPersonDetail } from "@/actions/";
+import { loadVehicleDetail } from "@/actions/";
 
-class PersonDetail extends Component {
+class VehicleDetail extends Component {
 	componentDidMount() {
-		this.props.loadPersonDetail(this.props.id);
+		this.props.loadVehicleDetail(this.props.id);
 	}
 
 	render() {
 		return (
-			<div class={style.person}>
-				{this.props.person.gender === "Male" ? (
-					<i class="fa fa-male" />
-				) : (
-					<i class="fa fa-female" />
-				)}
+			<div class={style.vehicle}>
+				<i class="fa fa-car" />
 
 				<div class={style.desc}>
-					<div class={style.title}>{this.props.person.name}</div>
-					<div class={style.text}>Age : {this.props.person.age}</div>
+					<div class={style.title}>{this.props.vehicle.name}</div>
 					<div class={style.text}>
-						Eye Color : {this.props.person.eye_color}
+						<b>Vehicle Class</b> : {this.props.vehicle.vehicle_class}
 					</div>
 					<div class={style.text}>
-						Hair Color : {this.props.person.hair_color}
+						<b>Length</b> : {this.props.vehicle.length}
 					</div>
-					<div class={style.text}>Species : {this.props.person.species}</div>
+					<div class={style.text}>
+						<b>Description</b> : {this.props.vehicle.description}
+					</div>
 				</div>
 			</div>
 		);
@@ -36,17 +33,17 @@ class PersonDetail extends Component {
 
 const mapStateToProps = state => {
 	return {
-		person: state.person
+		vehicle: state.vehicle
 	};
 };
 
 const mapDispatchToProps = dispatch => {
 	return {
-		loadPersonDetail: id => dispatch(loadPersonDetail(id))
+		loadVehicleDetail: id => dispatch(loadVehicleDetail(id))
 	};
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(PersonDetail);
+export default connect(mapStateToProps, mapDispatchToProps)(VehicleDetail);
 
 // {
 // 	"id": "4e09b023-f650-4747-9ab9-eacf14540cfb",
