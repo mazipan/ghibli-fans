@@ -33,6 +33,8 @@ module.exports = {
 			'node_modules'
 		],
 		alias: {
+			'@': SRC,
+			src: SRC,
 			pages: PAGES,
 			components: COMPONENTS,
 			style: STYLE,

@@ -1,9 +1,9 @@
-import * as ActionTypes from "../constant";
-import data from "../data/film";
+import * as ActionTypes from "@/constant";
+import data from "@/data/film";
 
 export function film(state = {}, action) {
 	switch (action.type) {
-		case ActionTypes.FILM_SUCCESS:
+		case ActionTypes.FILM_DETAIL_SUCCESS:
 			if (action.fromCache) {
 				return Object.assign({}, data[action.cache.id], action.cache);
 			}
@@ -16,7 +16,7 @@ export function film(state = {}, action) {
 
 export function films(state = [], action) {
 	switch (action.type) {
-		case ActionTypes.FILMS_SUCCESS:
+		case ActionTypes.FILM_SUCCESS:
 			if (action.fromCache) {
 				return action.cache.map(item => {
 					return Object.assign({}, data[item.id], item);

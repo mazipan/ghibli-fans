@@ -10,8 +10,7 @@ https://mazipan.github.io/ghibli-fans/
 
 ## API
 
-API made by [janaipakos](https://github.com/janaipakos/ghibliapi)
-, See docs [here](https://ghibliapi.herokuapp.com/)
+API made by [janaipakos](https://github.com/janaipakos/ghibliapi), see api docs [here](https://ghibliapi.herokuapp.com/)
 
 ## Powered by
 
@@ -26,6 +25,7 @@ You can read, copy, fork, distributed, etc for your learning proccess too.
 There is no purpose from Author to harm anyone. 
 
 ## Credit
+
 + [Janaipakos](https://github.com/janaipakos/ghibliapi) for awesome API
 + Logo from [lmushrimp.deviantart.com](https://lmushrimp.deviantart.com/art/My-Neighbor-Totoro-523346501)
 

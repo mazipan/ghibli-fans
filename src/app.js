@@ -9,8 +9,11 @@ const store = configureStore();
 import Header from "components/header";
 import Footer from "components/footer";
 
-import Home from "pages/home";
-import FilmPage from "pages/filmpage";
+import FilmsPage from "pages/films/list";
+import FilmPage from "pages/films/detail";
+
+import PeoplePage from "pages/people/list";
+import PersonPage from "pages/people/detail";
 
 export default class App extends Component {
 	state = {
@@ -31,8 +34,13 @@ export default class App extends Component {
 					<Header appName={this.state.appName} />
 
 					<Router history={createHashHistory()}>
-						<Home path="/" appName={this.state.appName} />
-						<FilmPage path="/film/:filmid" appName={this.state.appName} />
+						<FilmsPage path="/" appName={this.state.appName} />
+
+						<FilmsPage path="/films" appName={this.state.appName} />
+						<FilmPage path="/films/:filmid" appName={this.state.appName} />
+
+						<PeoplePage path="/people" appName={this.state.appName} />
+						<PersonPage path="/people/:filmid" appName={this.state.appName} />
 					</Router>
 
 					<Footer appName={this.state.appName} />

@@ -1,4 +1,4 @@
-import { saveCache } from "../cache";
+import { saveCache } from "@/cache";
 
 const API_ROOT = "https://ghibliapi.herokuapp.com/";
 

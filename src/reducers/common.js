@@ -1,8 +1,8 @@
-import * as ActionTypes from "../constant";
+import * as ActionTypes from "@/constant";
 
 export function hasErrored(state = false, action) {
 	switch (action.type) {
-		case ActionTypes.FILM_FAILURE:
+		case ActionTypes.FAILURE:
 			return action.type;
 		default:
 			return state;
@@ -11,7 +11,7 @@ export function hasErrored(state = false, action) {
 
 export function isLoading(state = false, action) {
 	switch (action.type) {
-		case ActionTypes.FILM_REQUEST:
+		case ActionTypes.REQUEST:
 			return action.type;
 		default:
 			return state;

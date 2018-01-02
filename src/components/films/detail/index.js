@@ -2,11 +2,11 @@ import { h, Component } from "preact";
 import style from "./style.less";
 
 import { connect } from "preact-redux";
-import { loadFilm } from "../../actions/";
+import { loadFilmDetail } from "@/actions/";
 
 class FilmDetail extends Component {
 	componentDidMount() {
-		this.props.loadFilm(this.props.filmid);
+		this.props.loadFilmDetail(this.props.filmid);
 	}
 
 	render() {
@@ -53,7 +53,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
 	return {
-		loadFilm: filmId => dispatch(loadFilm(filmId))
+		loadFilmDetail: filmId => dispatch(loadFilmDetail(filmId))
 	};
 };
 

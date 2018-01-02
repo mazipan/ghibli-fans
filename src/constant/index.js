@@ -1,8 +1,32 @@
 export const RESET_ERROR_MESSAGE = "RESET_ERROR_MESSAGE";
 
-export const FILM_REQUEST = "FILM_REQUEST";
-export const FILM_SUCCESS = "FILM_SUCCESS";
-export const FILMS_SUCCESS = "FILMS_SUCCESS";
-export const FILM_FAILURE = "FILM_FAILURE";
+export const REQUEST = "REQUEST_INPROGRESS";
+export const FAILURE = "REQUEST_FAILURE";
 
-export const CACHE_FILMS = "FILMS";
+export const FILM_DETAIL_SUCCESS = "FILM_SUCCESS";
+export const FILM_SUCCESS = "FILMS_SUCCESS";
+
+export const PEOPLE_DETAIL_SUCCESS = "PERSON_SUCCESS";
+export const PEOPLE_SUCCESS = "PEOPLE_SUCCESS";
+
+export const LOCATION_DETAIL_SUCCESS = "LOCATION_SUCCESS";
+export const LOCATION_SUCCESS = "LOCATIONS_SUCCESS";
+
+export const SPECIES_DETAIL_SUCCESS = "SPECIES_SUCCESS";
+export const SPECIES_SUCCESS = "SPECIESES_SUCCESS";
+
+export const VEHICLE_DETAIL_SUCCESS = "VEHICLE_SUCCESS";
+export const VEHICLE_SUCCESS = "VEHICLES_SUCCESS";
+
+export const CACHE_FILMS = "GHIBLI_FILMS";
+export const CACHE_PEOPLE = "GHIBLI_PEOPLE";
+export const CACHE_LOCATIONS = "GHIBLI_LOCATIONS";
+export const CACHE_SPECIES = "GHIBLI_SPECIES";
+export const CACHE_VEHICLES = "GHIBLI_VEHICLES";
+
+export const ENDPOINT_FILMS = "films";
+export const ENDPOINT_PEOPLE = "people";
+export const ENDPOINT_LOCATIONS = "locations";
+export const ENDPOINT_SPECIES = "species";
+export const ENDPOINT_VEHICLES = "vehicles";
+

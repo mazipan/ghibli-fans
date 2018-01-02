@@ -3,7 +3,7 @@ import style from "./style.less";
 import { Link } from "preact-router";
 
 import { connect } from "preact-redux";
-import { loadFilms } from "../../actions/";
+import { loadFilms } from "@/actions/";
 
 class Films extends Component {
 	componentDidMount() {
@@ -15,7 +15,7 @@ class Films extends Component {
 			<ul class={style.films}>
 				{this.props.films.map(item => (
 					<li key={item.id} class={style.film}>
-						<Link href={`/film/${item.id}`} class={style.card}>
+						<Link href={`/films/${item.id}`} class={style.card}>
 							<div class={style.card__left}>
 								<img src={item.image} />
 							</div>
