@@ -12,7 +12,7 @@ export default class Header extends Component {
 				</Link>
 				<nav>
 					<a target="_blank" href="https://github.com/mazipan/ghibli-fans">
-						<i class="fa fa-github"></i>
+						<i class="fa fa-github" />
 					</a>
 				</nav>
 			</header>

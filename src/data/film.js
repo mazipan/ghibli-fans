@@ -100,7 +100,8 @@ export default {
 	},
 	"758bf02e-3122-46e0-884e-67cf83df1786": {
 		imdb: "http://www.imdb.com/title/tt0876563/",
-		image: "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA5NzkxNTg2MF5BMl5BanBnXkFtZTcwMTA3MjU1Mg@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+		image:
+			"https://images-na.ssl-images-amazon.com/images/M/MV5BMjA5NzkxNTg2MF5BMl5BanBnXkFtZTcwMTA3MjU1Mg@@._V1_UX182_CR0,0,182,268_AL_.jpg",
 		streaming: "http://lk21.top/ponyo-2008/",
 		title: "Ponyo"
 	},

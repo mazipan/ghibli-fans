@@ -20,9 +20,15 @@ class FilmDetail extends Component {
 						<b>Rating</b> :{" "}
 						<span class={style.rating}>&#9734; {this.props.film.rt_score}</span>
 					</div>
-					<div class={style.text}><b>Year</b> : {this.props.film.release_date}</div>
-					<div class={style.text}><b>Director</b> : {this.props.film.director}</div>
-					<div class={style.text}><b>Producer</b> : {this.props.film.producer}</div>
+					<div class={style.text}>
+						<b>Year</b> : {this.props.film.release_date}
+					</div>
+					<div class={style.text}>
+						<b>Director</b> : {this.props.film.director}
+					</div>
+					<div class={style.text}>
+						<b>Producer</b> : {this.props.film.producer}
+					</div>
 					<div class={style.text}>
 						Description : {this.props.film.description}
 					</div>

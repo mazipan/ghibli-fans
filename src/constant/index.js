@@ -29,4 +29,3 @@ export const ENDPOINT_PEOPLE = "people";
 export const ENDPOINT_LOCATIONS = "locations";
 export const ENDPOINT_SPECIES = "species";
 export const ENDPOINT_VEHICLES = "vehicles";
-

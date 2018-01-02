@@ -12,18 +12,21 @@ class PersonDetail extends Component {
 	render() {
 		return (
 			<div class={style.person}>
-
-				{this.props.person.gender === 'Male' ? (
-					<i class="fa fa-male"></i>
+				{this.props.person.gender === "Male" ? (
+					<i class="fa fa-male" />
 				) : (
-					<i class="fa fa-female"></i>
+					<i class="fa fa-female" />
 				)}
 
 				<div class={style.desc}>
 					<div class={style.title}>{this.props.person.name}</div>
 					<div class={style.text}>Age : {this.props.person.age}</div>
-					<div class={style.text}>Eye Color : {this.props.person.eye_color}</div>
-					<div class={style.text}>Hair Color : {this.props.person.hair_color}</div>
+					<div class={style.text}>
+						Eye Color : {this.props.person.eye_color}
+					</div>
+					<div class={style.text}>
+						Hair Color : {this.props.person.hair_color}
+					</div>
 					<div class={style.text}>Species : {this.props.person.species}</div>
 				</div>
 			</div>

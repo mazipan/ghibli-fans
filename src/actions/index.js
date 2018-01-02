@@ -8,11 +8,7 @@ export const loadFilms = () => dispatch => {
 	if (!cache) {
 		const fetchData = () => ({
 			[CALL_API]: {
-				types: [
-					Constant.REQUEST,
-					Constant.FILM_SUCCESS,
-					Constant.FAILURE
-				],
+				types: [Constant.REQUEST, Constant.FILM_SUCCESS, Constant.FAILURE],
 				endpoint: `${Constant.ENDPOINT_FILMS}/`,
 				cachekey: Constant.CACHE_FILMS
 			}
@@ -55,18 +51,13 @@ export const loadFilmDetail = id => dispatch => {
 	return dispatch(action);
 };
 
-
 // PEOPLE
 export const loadPeople = () => dispatch => {
 	let cache = getCache(Constant.CACHE_PEOPLE);
 	if (!cache) {
 		const fetchData = () => ({
 			[CALL_API]: {
-				types: [
-					Constant.REQUEST,
-					Constant.PEOPLE_SUCCESS,
-					Constant.FAILURE
-				],
+				types: [Constant.REQUEST, Constant.PEOPLE_SUCCESS, Constant.FAILURE],
 				endpoint: `${Constant.ENDPOINT_PEOPLE}/`,
 				cachekey: Constant.CACHE_PEOPLE
 			}
@@ -109,18 +100,13 @@ export const loadPersonDetail = id => dispatch => {
 	return dispatch(action);
 };
 
-
 // LOCATION
 export const loadLocations = () => dispatch => {
 	let cache = getCache(Constant.CACHE_LOCATIONS);
 	if (!cache) {
 		const fetchData = () => ({
 			[CALL_API]: {
-				types: [
-					Constant.REQUEST,
-					Constant.LOCATION_SUCCESS,
-					Constant.FAILURE
-				],
+				types: [Constant.REQUEST, Constant.LOCATION_SUCCESS, Constant.FAILURE],
 				endpoint: `${Constant.ENDPOINT_LOCATIONS}/`,
 				cachekey: Constant.CACHE_LOCATIONS
 			}
@@ -163,18 +149,13 @@ export const loadLocationDetail = id => dispatch => {
 	return dispatch(action);
 };
 
-
 // SPECIES
 export const loadSpecies = () => dispatch => {
 	let cache = getCache(Constant.CACHE_SPECIES);
 	if (!cache) {
 		const fetchData = () => ({
 			[CALL_API]: {
-				types: [
-					Constant.REQUEST,
-					Constant.SPECIES_SUCCESS,
-					Constant.FAILURE
-				],
+				types: [Constant.REQUEST, Constant.SPECIES_SUCCESS, Constant.FAILURE],
 				endpoint: `${Constant.ENDPOINT_SPECIES}/`,
 				cachekey: Constant.CACHE_SPECIES
 			}
@@ -223,11 +204,7 @@ export const loadVehicles = () => dispatch => {
 	if (!cache) {
 		const fetchData = () => ({
 			[CALL_API]: {
-				types: [
-					Constant.REQUEST,
-					Constant.VEHICLE_SUCCESS,
-					Constant.FAILURE
-				],
+				types: [Constant.REQUEST, Constant.VEHICLE_SUCCESS, Constant.FAILURE],
 				endpoint: `${Constant.ENDPOINT_VEHICLES}/`,
 				cachekey: Constant.CACHE_VEHICLES
 			}
