@@ -8,7 +8,7 @@ export default class VehiclePage extends Component {
 		return (
 			<main class={style.filmpage}>
 				<h1>Vehicle description</h1>
-				<FilmDetail filmid={this.props.filmid} />
+				<FilmDetail id={this.props.id} />
 			</main>
 		);
 	}

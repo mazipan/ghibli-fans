@@ -46,19 +46,19 @@ export default class App extends Component {
 						<FilmsPage path="/" />
 
 						<FilmsPage path="/films" />
-						<FilmPage path="/films/:filmid" />
+						<FilmPage path="/films/:id" />
 
 						<PeoplePage path="/people" />
-						<PersonPage path="/people/:filmid" />
+						<PersonPage path="/people/:id" />
 
 						<LocationsPage path="/locations" />
-						<LocationPage path="/locations/:filmid" />
+						<LocationPage path="/locations/:id" />
 
 						<SpeciesPage path="/species" />
-						<SpeciesDetailPage path="/species/:filmid" />
+						<SpeciesDetailPage path="/species/:id" />
 
 						<VehiclesPage path="/vehicles" />
-						<VehiclePage path="/vehicles/:filmid" />
+						<VehiclePage path="/vehicles/:id" />
 					</Router>
 
 					<Footer appName={this.state.appName} />

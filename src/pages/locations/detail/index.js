@@ -8,7 +8,7 @@ export default class LocationPage extends Component {
 		return (
 			<main class={style.filmpage}>
 				<h1>Location description</h1>
-				<FilmDetail filmid={this.props.filmid} />
+				<FilmDetail id={this.props.id} />
 			</main>
 		);
 	}

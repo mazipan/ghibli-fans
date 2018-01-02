@@ -8,7 +8,7 @@ export default class SpeciesDetailPage extends Component {
 		return (
 			<main class={style.filmpage}>
 				<h1>Species description</h1>
-				<FilmDetail filmid={this.props.filmid} />
+				<FilmDetail id={this.props.id} />
 			</main>
 		);
 	}

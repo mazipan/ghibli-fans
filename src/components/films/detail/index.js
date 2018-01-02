@@ -6,7 +6,7 @@ import { loadFilmDetail } from "@/actions/";
 
 class FilmDetail extends Component {
 	componentDidMount() {
-		this.props.loadFilmDetail(this.props.filmid);
+		this.props.loadFilmDetail(this.props.id);
 	}
 
 	render() {
@@ -53,7 +53,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
 	return {
-		loadFilmDetail: filmId => dispatch(loadFilmDetail(filmId))
+		loadFilmDetail: id => dispatch(loadFilmDetail(id))
 	};
 };
 
