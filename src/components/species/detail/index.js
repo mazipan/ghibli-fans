@@ -33,7 +33,7 @@ class SpeciesDetail extends Component {
 
 const mapStateToProps = state => {
 	return {
-		person: state.person
+		species: state.species
 	};
 };
 

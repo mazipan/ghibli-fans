@@ -17,7 +17,7 @@ class LocationDetail extends Component {
 				<div class={style.desc}>
 					<div class={style.title}>{this.props.location.name}</div>
 					<div class={style.text}>
-						<b>Climate</b> : {this.props.location.age}
+						<b>Climate</b> : {this.props.location.climate}
 					</div>
 					<div class={style.text}>
 						<b>Terrain</b> : {this.props.location.terrain}
