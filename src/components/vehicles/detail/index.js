@@ -20,18 +20,14 @@ class PersonDetail extends Component {
 
 				<div class={style.desc}>
 					<div class={style.title}>{this.props.person.name}</div>
+					<div class={style.text}>Age : {this.props.person.age}</div>
 					<div class={style.text}>
-						<b>Age</b> : {this.props.person.age}
+						Eye Color : {this.props.person.eye_color}
 					</div>
 					<div class={style.text}>
-						<b>Eye Color</b> : {this.props.person.eye_color}
+						Hair Color : {this.props.person.hair_color}
 					</div>
-					<div class={style.text}>
-						<b>Hair Color</b> : {this.props.person.hair_color}
-					</div>
-					<div class={style.text}>
-						<b>Species</b> : {this.props.person.species}
-					</div>
+					<div class={style.text}>Species : {this.props.person.species}</div>
 				</div>
 			</div>
 		);
@@ -53,13 +49,12 @@ const mapDispatchToProps = dispatch => {
 export default connect(mapStateToProps, mapDispatchToProps)(PersonDetail);
 
 // {
-// 	"id": "ba924631-068e-4436-b6de-f3283fa848f0",
-// 	"name": "Ashitaka",
-// 	"gender": "male",
-// 	"age": "late teens",
-// 	"eye_color": "brown",
-// 	"hair_color": "brown",
-// 	"films": [],
-// 	"species": "https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2",
-// 	"url": "https://ghibliapi.herokuapp.com/people/ba924631-068e-4436-b6de-f3283fa848f0"
-// }
+// 	"id": "4e09b023-f650-4747-9ab9-eacf14540cfb",
+// 	"name": "Air Destroyer Goliath",
+// 	"description": "A military airship utilized by the government to access Laputa",
+// 	"vehicle_class": "Airship",
+// 	"length": "1,000",
+// 	"pilot": "https://ghibliapi.herokuapp.com/people/40c005ce-3725-4f15-8409-3e1b1b14b583",
+// 	"films": "https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe",
+// 	"url": "https://ghibliapi.herokuapp.com/vehicles/4e09b023-f650-4747-9ab9-eacf14540cfb"
+// 	}
