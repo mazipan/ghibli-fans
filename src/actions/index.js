@@ -221,7 +221,7 @@ export const loadVehicles = () => dispatch => {
 	return dispatch(action);
 };
 
-export const loadVehiclesDetail = id => dispatch => {
+export const loadVehicleDetail = id => dispatch => {
 	let cache = getCache(id);
 	if (!cache) {
 		const fetchData = id => ({

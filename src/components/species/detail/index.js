@@ -15,15 +15,15 @@ class SpeciesDetail extends Component {
 				<i class="fa fa-reddit-alien" />
 
 				<div class={style.desc}>
-					<div class={style.title}>{this.props.species.name}</div>
+					<div class={style.title}>{this.props.speciesDetail.name}</div>
 					<div class={style.text}>
-						<b>Age</b> : {this.props.species.classification}
+						<b>Age</b> : {this.props.speciesDetail.classification}
 					</div>
 					<div class={style.text}>
-						<b>Eye Color</b> : {this.props.species.eye_color}
+						<b>Eye Color</b> : {this.props.speciesDetail.eye_colors}
 					</div>
 					<div class={style.text}>
-						<b>Hair Color</b> : {this.props.species.hair_color}
+						<b>Hair Color</b> : {this.props.speciesDetail.hair_colors}
 					</div>
 				</div>
 			</div>
@@ -33,7 +33,7 @@ class SpeciesDetail extends Component {
 
 const mapStateToProps = state => {
 	return {
-		species: state.species
+		speciesDetail: state.speciesDetail
 	};
 };
 
