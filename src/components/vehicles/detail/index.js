@@ -12,7 +12,7 @@ class VehicleDetail extends Component {
 	render() {
 		return (
 			<div class={style.vehicle}>
-				<i class="fa fa-car" />
+				<img src={this.props.vehicle.image} />
 
 				<div class={style.desc}>
 					<div class={style.title}>{this.props.vehicle.name}</div>
