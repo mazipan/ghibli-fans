@@ -17,7 +17,7 @@ class Species extends Component {
 					<li key={item.id} class={style.person}>
 						<Link href={`/species/${item.id}`} class={style.card}>
 							<div class={style.card__left}>
-								<i class="fa fa-reddit-alien" />
+								<img src={item.image} />
 							</div>
 							<div class={style.card__right}>{item.name}</div>
 						</Link>

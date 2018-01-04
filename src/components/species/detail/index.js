@@ -12,7 +12,7 @@ class SpeciesDetail extends Component {
 	render() {
 		return (
 			<div class={style.species}>
-				<i class="fa fa-reddit-alien" />
+				<img src={this.props.speciesDetail.image} />
 
 				<div class={style.desc}>
 					<div class={style.title}>{this.props.speciesDetail.name}</div>
