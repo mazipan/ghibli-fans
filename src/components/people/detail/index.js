@@ -12,10 +12,11 @@ class PersonDetail extends Component {
 	render() {
 		return (
 			<div class={style.person}>
-				{this.props.person.gender === "Male" ? (
-					<i class="fa fa-male" />
+
+				{this.props.person.image ? (
+					<img src={this.props.person.image} />
 				) : (
-					<i class="fa fa-female" />
+					<i class="fa fa-male" />
 				)}
 
 				<div class={style.desc}>
@@ -32,7 +33,15 @@ class PersonDetail extends Component {
 					<div class={style.text}>
 						<b>Species</b> : {this.props.person.species}
 					</div>
+
+					<div class={style.link__wrapper}>
+						<a class={style.link} href={this.props.person.story} target="_blank">
+							<i class="fa fa-book" /> Read More Info
+						</a>
+					</div>
+
 				</div>
+
 			</div>
 		);
 	}
