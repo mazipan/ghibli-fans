@@ -76,5 +76,114 @@ export default {
 			"https://vignette.wikia.nocookie.net/studio-ghibli/images/c/c9/Mei.jpeg/revision/latest?cb=20170121144048",
 		title: "Mei Kusakabe",
 		story: "http://studio-ghibli.wikia.com/wiki/Mei_Kusakabe"
+	},
+	"3031caa8-eb1a-41c6-ab93-dd091b541e11": {
+		image:
+			"https://vignette.wikia.nocookie.net/studio-ghibli/images/e/e4/07.jpg/revision/latest?cb=20131027200928",
+		title: "Tatsuo Kusakabe",
+		story: "http://studio-ghibli.wikia.com/wiki/Tatsuo_Kusakabe"
+	},
+	"87b68b97-3774-495b-bf80-495a5f3e672d": {
+		image:
+			"https://vignette.wikia.nocookie.net/studio-ghibli/images/2/28/Mrs.Kusakabe.png/revision/latest?cb=20110705210532",
+		title: "Yasuko Kusakabe",
+		story: "http://studio-ghibli.wikia.com/wiki/Yasuko_Kusakabe"
+	},
+	"08ffbce4-7f94-476a-95bc-76d3c3969c19": {
+		image:
+			"https://vignette.wikia.nocookie.net/studio-ghibli/images/d/d9/Granny.png/revision/latest?cb=20130124201437",
+		title: "Granny",
+		story: "http://studio-ghibli.wikia.com/wiki/Granny"
+	},
+	"0f8ef701-b4c7-4f15-bd15-368c7fe38d0a": {
+		image:
+			"https://vignette.wikia.nocookie.net/studio-ghibli/images/c/c3/Kanta.jpg/revision/latest?cb=20130614154117",
+		title: "Kanta Ogaki",
+		story: "http://studio-ghibli.wikia.com/wiki/Kanta_Ogaki"
+	},
+	"d39deecb-2bd0-4770-8b45-485f26e1381f": {
+		image:
+			"https://vignette.wikia.nocookie.net/studio-ghibli/images/5/5f/Bluetotoro.png/revision/latest?cb=20150918181559",
+		title: "Totoro",
+		story: "http://studio-ghibli.wikia.com/wiki/Totoro"
+	},
+	"591524bc-04fe-4e60-8d61-2425e42ffb2a": {
+		image:
+			"https://vignette.wikia.nocookie.net/studio-ghibli/images/d/db/Bl%C3%A5_Totoro.jpg/revision/latest?cb=20130401154121",
+		title: "Chu Totoro",
+		story: "http://studio-ghibli.wikia.com/wiki/Mini_Totoro"
+	},
+	"c491755a-407d-4d6e-b58a-240ec78b5061": {
+		image:
+			"https://vignette.wikia.nocookie.net/studio-ghibli/images/d/db/Bl%C3%A5_Totoro.jpg/revision/latest?cb=20130401154121",
+		title: "Chibi Totoro",
+		story: "http://studio-ghibli.wikia.com/wiki/Mini_Totoro"
+	},
+	"f467e18e-3694-409f-bdb3-be891ade1106": {
+		image:
+			"https://vignette.wikia.nocookie.net/studio-ghibli/images/3/30/Catbus.jpg/revision/latest?cb=20130127095152",
+		title: "Catbus",
+		story: "http://studio-ghibli.wikia.com/wiki/Catbus"
+	},
+	"89026b3a-abc4-4053-ab1a-c6d2eea68faa": {
+		image:
+			"https://vignette.wikia.nocookie.net/studio-ghibli/images/5/5a/Niya.jpg/revision/latest?cb=20131010121045",
+		title: "Niya",
+		story: "http://studio-ghibli.wikia.com/wiki/Niya"
+	},
+	"6b3facea-ea33-47b1-96ce-3fc737b119b8": {
+		image:
+			"https://vignette.wikia.nocookie.net/studio-ghibli/images/6/6f/Muta.jpg/revision/latest?cb=20151128100340",
+		title: "Renaldo Moon aka Moon aka Muta",
+		story: "http://studio-ghibli.wikia.com/wiki/Muta"
+	},
+	"3042818d-a8bb-4cba-8180-c19249822d57": {
+		image:
+			"https://vignette.wikia.nocookie.net/studio-ghibli/images/3/31/Kattkungen.jpg/revision/latest?cb=20130304183749",
+		title: "Cat King",
+		story: "http://studio-ghibli.wikia.com/wiki/Cat_King"
+	},
+	"58d1973f-f247-47d7-9358-e56cb0d2b5a6": {
+		image:
+			"https://vignette.wikia.nocookie.net/studio-ghibli/images/e/eb/New_queen%2C_Yuki.JPG/revision/latest?cb=20170813030008",
+		title: "Yuki",
+		story: "http://studio-ghibli.wikia.com/wiki/Yuki"
+	},
+	"a3d8e70f-46a0-4e5a-b850-db01620d6b92": {
+		image:
+			"https://vignette.wikia.nocookie.net/studio-ghibli/images/3/3d/Haru_%28dam%29.jpg/revision/latest?cb=20130219155133",
+		title: "Haru",
+		story:
+			"http://studio-ghibli.wikia.com/wiki/Haru_(The_Secret_World_of_Arrietty)"
+	},
+	"fc196c4f-0201-4ed2-9add-c6403f7c4d32": {
+		image:
+			"https://vignette.wikia.nocookie.net/studio-ghibli/images/7/73/Baron.jpg/revision/latest?cb=20150124102412",
+		title: "Baron Humbert von Gikkingen",
+		story: "http://studio-ghibli.wikia.com/wiki/Baron_Humbert_von_Gikkingen"
+	},
+	"466bc926-2024-4653-ac63-fe52f2dc8c7b": {
+		image:
+			"https://vignette.wikia.nocookie.net/studio-ghibli/images/c/c4/Natori.jpg/revision/latest?cb=20150905140608",
+		title: "Natori",
+		story: "http://studio-ghibli.wikia.com/wiki/Natori"
+	},
+	"40c005ce-3725-4f15-8409-3e1b1b14b583": {
+		image:
+			"https://vignette.wikia.nocookie.net/studio-ghibli/images/d/d5/Muska.jpg/revision/latest?cb=20130424141851",
+		title: "Colonel Muska",
+		story: "http://studio-ghibli.wikia.com/wiki/Muska"
+	},
+	"6523068d-f5a9-4150-bf5b-76abe6fb42c3": {
+		image:
+			"https://vignette.wikia.nocookie.net/studio-ghibli/images/f/fe/Porco.jpg/revision/latest?cb=20161129072722",
+		title: "Porco Rosso",
+		story: "http://studio-ghibli.wikia.com/wiki/Marco_Pagot"
+	},
+	"a10f64f3-e0b6-4a94-bf30-87ad8bc51607": {
+		image:
+			"https://vignette.wikia.nocookie.net/studio-ghibli/images/4/46/Sosuke.png/revision/latest?cb=20110730154019",
+		title: "Sosuke",
+		story: "http://studio-ghibli.wikia.com/wiki/S%C5%8Dsuke"
 	}
 };
