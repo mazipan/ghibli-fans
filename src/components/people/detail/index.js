@@ -12,7 +12,6 @@ class PersonDetail extends Component {
 	render() {
 		return (
 			<div class={style.person}>
-
 				{this.props.person.image ? (
 					<img src={this.props.person.image} />
 				) : (
@@ -35,13 +34,15 @@ class PersonDetail extends Component {
 					</div>
 
 					<div class={style.link__wrapper}>
-						<a class={style.link} href={this.props.person.story} target="_blank">
+						<a
+							class={style.link}
+							href={this.props.person.story}
+							target="_blank"
+						>
 							<i class="fa fa-book" /> Read More Info
 						</a>
 					</div>
-
 				</div>
-
 			</div>
 		);
 	}
