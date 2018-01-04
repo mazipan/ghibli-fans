@@ -1,6 +1,6 @@
 # ghibli-fans
 
-🐰 Enter The Ghibli's World
+🐰 Browse film, character, etc from Ghibli Studio
 
 ![Ghibli-Fans](https://github.com/mazipan/ghibli-fans/blob/master/screenshoot.png?raw=true)
 

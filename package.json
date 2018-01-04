@@ -1,7 +1,7 @@
 {
   "name": "ghibli-fans",
   "version": "0.0.1",
-  "description": "Enter The Ghibli's World",
+  "description": "Browse film, character, etc from Ghibli Studio",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --progress",
     "start": "serve build -s -c 1",
