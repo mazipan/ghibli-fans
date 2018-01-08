@@ -1,7 +1,7 @@
 {
 	"name": "Ghibli Fans",
 	"short_name": "Ghibli",
-	"start_url": "/ghibli-fans/",
+	"start_url": "https://mazipan.github.io/ghibli-fans/#/",
 	"display": "standalone",
 	"orientation": "portrait",
 	"background_color": "#fff",
