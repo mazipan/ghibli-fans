@@ -5,15 +5,20 @@ import { Link } from "preact-router";
 import { connect } from "preact-redux";
 import { loadFilms } from "@/actions/";
 
+import AdsInFeed from "components/googleads/infeed";
+
 class Films extends Component {
 	componentDidMount() {
 		this.props.loadFilms();
 	}
 
 	render() {
-		return (
-			<ul class={style.films}>
-				{this.props.films.map(item => (
+		const generateBlockWithAds = function(item, index) {
+			let result = null;
+			if (index > 0 && index % 5 === 0) {
+				result = <AdsInFeed />;
+			} else {
+				result = (
 					<li key={item.id} class={style.film}>
 						<Link href={`/films/${item.id}`} class={style.card}>
 							<div class={style.card__left}>
@@ -28,7 +33,14 @@ class Films extends Component {
 							</div>
 						</Link>
 					</li>
-				))}
+				);
+			}
+			return result;
+		};
+
+		return (
+			<ul class={style.films}>
+				{this.props.films.map(generateBlockWithAds)}
 			</ul>
 		);
 	}

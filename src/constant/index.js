@@ -18,11 +18,11 @@ export const SPECIES_SUCCESS = "SPECIESES_SUCCESS";
 export const VEHICLE_DETAIL_SUCCESS = "VEHICLE_DETAIL_SUCCESS";
 export const VEHICLE_SUCCESS = "VEHICLES_SUCCESS";
 
-export const CACHE_FILMS = "GHIBLI_FILMS";
-export const CACHE_PEOPLE = "GHIBLI_PEOPLE";
-export const CACHE_LOCATIONS = "GHIBLI_LOCATIONS";
-export const CACHE_SPECIES = "GHIBLI_SPECIES";
-export const CACHE_VEHICLES = "GHIBLI_VEHICLES";
+export const CACHE_FILMS = "FILMS";
+export const CACHE_PEOPLE = "PEOPLE";
+export const CACHE_LOCATIONS = "LOCATIONS";
+export const CACHE_SPECIES = "SPECIES";
+export const CACHE_VEHICLES = "VEHICLES";
 
 export const ENDPOINT_FILMS = "films";
 export const ENDPOINT_PEOPLE = "people";
