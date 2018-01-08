@@ -1,6 +1,7 @@
 import { h, Component } from "preact";
 import { Router } from "preact-router";
 import createHashHistory from "history/createHashHistory";
+import AsyncRoute from "preact-async-route";
 
 import { Provider } from "preact-redux";
 import configureStore from "./store";
@@ -10,33 +11,17 @@ import Header from "components/header";
 import Footer from "components/footer";
 
 import FilmsPage from "pages/films/list";
-import FilmPage from "pages/films/detail";
-
-import PeoplePage from "pages/people/list";
-import PersonPage from "pages/people/detail";
-
-import LocationsPage from "pages/locations/list";
-import LocationPage from "pages/locations/detail";
-
-import SpeciesPage from "pages/species/list";
-import SpeciesDetailPage from "pages/species/detail";
-
-import VehiclesPage from "pages/vehicles/list";
-import VehiclePage from "pages/vehicles/detail";
 
 export default class App extends Component {
 	state = {
 		appName: "Ghibli Fans"
 	};
-	/** Gets fired when the route changes.
-	 *	@param {Object} event		"change" event from [preact-router](http://git.io/preact-router)
-	 *	@param {string} event.url	The newly routed URL
-	 */
-	handleRoute = e => {
-		this.currentUrl = e.url;
-	};
 
 	render() {
+		const getAsyncComponent = path => {
+			import(path).then(module => module.default);
+		};
+
 		return (
 			<Provider store={store}>
 				<div id="app">
@@ -44,21 +29,43 @@ export default class App extends Component {
 
 					<Router history={createHashHistory()}>
 						<FilmsPage path="/" />
-
 						<FilmsPage path="/films" />
-						<FilmPage path="/films/:id" />
-
-						<PeoplePage path="/people" />
-						<PersonPage path="/people/:id" />
-
-						<LocationsPage path="/locations" />
-						<LocationPage path="/locations/:id" />
-
-						<SpeciesPage path="/species" />
-						<SpeciesDetailPage path="/species/:id" />
-
-						<VehiclesPage path="/vehicles" />
-						<VehiclePage path="/vehicles/:id" />
+						<AsyncRoute
+							path="/films/:id"
+							getComponent={getAsyncComponent("pages/films/detail")}
+						/>
+						<AsyncRoute
+							path="/people/"
+							getComponent={getAsyncComponent("pages/people/list")}
+						/>
+						<AsyncRoute
+							path="/people/:id"
+							getComponent={getAsyncComponent("pages/people/detail")}
+						/>
+						<AsyncRoute
+							path="/locations/"
+							getComponent={getAsyncComponent("pages/locations/list")}
+						/>
+						<AsyncRoute
+							path="/locations/:id"
+							getComponent={getAsyncComponent("pages/locations/detail")}
+						/>
+						<AsyncRoute
+							path="/species/"
+							getComponent={getAsyncComponent("pages/species/list")}
+						/>
+						<AsyncRoute
+							path="/species/:id"
+							getComponent={getAsyncComponent("pages/species/detail")}
+						/>
+						<AsyncRoute
+							path="/vehicles/"
+							getComponent={getAsyncComponent("pages/vehicles/list")}
+						/>
+						<AsyncRoute
+							path="/vehicles/:id"
+							getComponent={getAsyncComponent("pages/vehicles/detail")}
+						/>
 					</Router>
 
 					<Footer appName={this.state.appName} />
