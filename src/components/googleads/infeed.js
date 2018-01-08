@@ -1,16 +1,17 @@
 import { h, Component } from "preact";
 
+const GOOGLE_ADS = '//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
+
 export default class AdsInFeed extends Component {
 	componentDidMount() {
 		const installGoogleAds = () => {
 			const elem = document.createElement("script");
-			elem.src = "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			elem.src = GOOGLE_ADS;
 			elem.async = true;
-			elem.defer = true;
 			this.base.parentNode.insertBefore(elem, this.base);
 		};
 		installGoogleAds();
-		(adsbygoogle = window.adsbygoogle || []).push({});
+		if (window) (window.adsbygoogle = window.adsbygoogle || []).push({});
 	}
 
 	render() {
