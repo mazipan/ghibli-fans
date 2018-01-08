@@ -7,7 +7,7 @@ export default class AdsInFeed extends Component {
 			elem.src = "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
 			elem.async = true;
 			elem.defer = true;
-			document.body.insertBefore(elem, document.body.firstChild);
+			this.base.parentNode.insertBefore(elem, this.base);
 		};
 		installGoogleAds();
 		(adsbygoogle = window.adsbygoogle || []).push({});
