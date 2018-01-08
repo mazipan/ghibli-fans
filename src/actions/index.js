@@ -19,7 +19,7 @@ export const loadFilms = () => dispatch => {
 
 	const action = {
 		type: Constant.FILM_SUCCESS,
-		cache: JSON.parse(cache),
+		cache,
 		fromCache: true
 	};
 	return dispatch(action);
@@ -45,7 +45,7 @@ export const loadFilmDetail = id => dispatch => {
 
 	const action = {
 		type: Constant.FILM_DETAIL_SUCCESS,
-		cache: JSON.parse(cache),
+		cache,
 		fromCache: true
 	};
 	return dispatch(action);
@@ -68,7 +68,7 @@ export const loadPeople = () => dispatch => {
 
 	const action = {
 		type: Constant.PEOPLE_SUCCESS,
-		cache: JSON.parse(cache),
+		cache,
 		fromCache: true
 	};
 	return dispatch(action);
@@ -94,7 +94,7 @@ export const loadPersonDetail = id => dispatch => {
 
 	const action = {
 		type: Constant.PEOPLE_DETAIL_SUCCESS,
-		cache: JSON.parse(cache),
+		cache,
 		fromCache: true
 	};
 	return dispatch(action);
@@ -117,7 +117,7 @@ export const loadLocations = () => dispatch => {
 
 	const action = {
 		type: Constant.LOCATION_SUCCESS,
-		cache: JSON.parse(cache),
+		cache,
 		fromCache: true
 	};
 	return dispatch(action);
@@ -143,7 +143,7 @@ export const loadLocationDetail = id => dispatch => {
 
 	const action = {
 		type: Constant.LOCATION_DETAIL_SUCCESS,
-		cache: JSON.parse(cache),
+		cache,
 		fromCache: true
 	};
 	return dispatch(action);
@@ -166,7 +166,7 @@ export const loadSpecies = () => dispatch => {
 
 	const action = {
 		type: Constant.SPECIES_SUCCESS,
-		cache: JSON.parse(cache),
+		cache,
 		fromCache: true
 	};
 	return dispatch(action);
@@ -192,7 +192,7 @@ export const loadSpeciesDetail = id => dispatch => {
 
 	const action = {
 		type: Constant.SPECIES_DETAIL_SUCCESS,
-		cache: JSON.parse(cache),
+		cache,
 		fromCache: true
 	};
 	return dispatch(action);
@@ -215,7 +215,7 @@ export const loadVehicles = () => dispatch => {
 
 	const action = {
 		type: Constant.VEHICLE_SUCCESS,
-		cache: JSON.parse(cache),
+		cache,
 		fromCache: true
 	};
 	return dispatch(action);
@@ -241,7 +241,7 @@ export const loadVehicleDetail = id => dispatch => {
 
 	const action = {
 		type: Constant.VEHICLE_DETAIL_SUCCESS,
-		cache: JSON.parse(cache),
+		cache,
 		fromCache: true
 	};
 	return dispatch(action);

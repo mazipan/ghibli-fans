@@ -15,7 +15,7 @@ const callApi = (endpoint, cachekey) => {
 				return Promise.reject(json);
 			}
 
-			saveCache(cachekey, JSON.stringify(json));
+			saveCache(cachekey, json);
 			return json;
 		})
 	);
