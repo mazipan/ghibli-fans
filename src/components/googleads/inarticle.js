@@ -1,6 +1,6 @@
 import { h, Component } from "preact";
 
-const GOOGLE_ADS = '//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
+const GOOGLE_ADS = "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
 
 export default class AdsInArticle extends Component {
 	componentDidMount() {
