@@ -16,7 +16,11 @@ class Films extends Component {
 		const generateBlockWithAds = function(item, index) {
 			let result = null;
 			if (index > 0 && index % 5 === 0) {
-				result = <AdsInFeed />;
+				result = (
+					<li class={style.card}>
+						<AdsInFeed />
+					</li>
+				);
 			} else {
 				result = (
 					<li key={item.id} class={style.film}>
@@ -39,9 +43,7 @@ class Films extends Component {
 		};
 
 		return (
-			<ul class={style.films}>
-				{this.props.films.map(generateBlockWithAds)}
-			</ul>
+			<ul class={style.films}>{this.props.films.map(generateBlockWithAds)}</ul>
 		);
 	}
 }

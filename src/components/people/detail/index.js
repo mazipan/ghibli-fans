@@ -4,6 +4,8 @@ import style from "./style.less";
 import { connect } from "preact-redux";
 import { loadPersonDetail } from "@/actions/";
 
+import AdsInArticle from "components/googleads/inarticle";
+
 class PersonDetail extends Component {
 	componentDidMount() {
 		this.props.loadPersonDetail(this.props.id);
@@ -41,6 +43,10 @@ class PersonDetail extends Component {
 						>
 							<i class="fa fa-book" /> Read More Info
 						</a>
+					</div>
+
+					<div class="adswrapper">
+						<AdsInArticle />
 					</div>
 				</div>
 			</div>

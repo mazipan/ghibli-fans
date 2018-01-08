@@ -1,6 +1,6 @@
 import { h, Component } from "preact";
 
-export default class AdsInFeed extends Component {
+export default class AdsInArticle extends Component {
 	componentDidMount() {
 		const installGoogleAds = () => {
 			const elem = document.createElement("script");
@@ -17,11 +17,11 @@ export default class AdsInFeed extends Component {
 		return (
 			<ins
 				class="adsbygoogle"
-				style={{ display: "block" }}
+				style={{ display: "block", "text-align": "center" }}
+				data-ad-layout="in-article"
 				data-ad-format="fluid"
-				data-ad-layout-key="-fg+5n+6t-e7+r"
 				data-ad-client="ca-pub-5442972248172818"
-				data-ad-slot="2105028631"
+				data-ad-slot="7974047383"
 			/>
 		);
 	}

@@ -4,6 +4,8 @@ import style from "./style.less";
 import { connect } from "preact-redux";
 import { loadLocationDetail } from "@/actions/";
 
+import AdsInArticle from "components/googleads/inarticle";
+
 class LocationDetail extends Component {
 	componentDidMount() {
 		this.props.loadLocationDetail(this.props.id);
@@ -24,6 +26,10 @@ class LocationDetail extends Component {
 					</div>
 					<div class={style.text}>
 						<b>Surface Water</b> : {this.props.location.surface_water}
+					</div>
+
+					<div class="adswrapper">
+						<AdsInArticle />
 					</div>
 				</div>
 			</div>
