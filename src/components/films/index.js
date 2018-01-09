@@ -12,22 +12,24 @@ class Films extends Component {
 
 	render() {
 		return (
-			<ul class={style.films}>{this.props.films.map((item) =>
-				<li key={item.id} class={style.film}>
-					<Link href={`/films/${item.id}`} class={style.card}>
-						<div class={style.card__left}>
-							<img src={item.image} />
-						</div>
-						<div class={style.card__right}>
-							<div class={style.title}>
-								{item.title}
-
-								<span class={style.text}>({item.release_date})</span>
+			<ul class={style.films}>
+				{this.props.films.map(item => (
+					<li key={item.id} class={style.film}>
+						<Link href={`/films/${item.id}`} class={style.card}>
+							<div class={style.card__left}>
+								<img src={item.image} />
 							</div>
-						</div>
-					</Link>
-				</li>
-			)}</ul>
+							<div class={style.card__right}>
+								<div class={style.title}>
+									{item.title}
+
+									<span class={style.text}>({item.release_date})</span>
+								</div>
+							</div>
+						</Link>
+					</li>
+				))}
+			</ul>
 		);
 	}
 }

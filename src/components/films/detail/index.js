@@ -4,7 +4,6 @@ import style from "./style.less";
 import { connect } from "preact-redux";
 import { loadFilmDetail } from "@/actions/";
 
-
 import { AdsInArticle } from "@/components/googleads/inarticle";
 
 class FilmDetail extends Component {
