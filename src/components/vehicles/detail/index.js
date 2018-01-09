@@ -4,8 +4,6 @@ import style from "./style.less";
 import { connect } from "preact-redux";
 import { loadVehicleDetail } from "@/actions/";
 
-import AdsInArticle from "components/googleads/inarticle";
-
 class VehicleDetail extends Component {
 	componentDidMount() {
 		this.props.loadVehicleDetail(this.props.id);
@@ -26,10 +24,6 @@ class VehicleDetail extends Component {
 					</div>
 					<div class={style.text}>
 						<b>Description</b> : {this.props.vehicle.description}
-					</div>
-
-					<div class="adswrapper">
-						<AdsInArticle />
 					</div>
 				</div>
 			</div>
