@@ -4,6 +4,9 @@ import style from "./style.less";
 import { connect } from "preact-redux";
 import { loadFilmDetail } from "@/actions/";
 
+
+import { AdsInArticle } from "@/components/googleads/inarticle";
+
 class FilmDetail extends Component {
 	componentDidMount() {
 		this.props.loadFilmDetail(this.props.id);
@@ -44,6 +47,10 @@ class FilmDetail extends Component {
 						>
 							<i class="fa fa-play-circle-o" /> Streaming
 						</a>
+					</div>
+
+					<div class={style.adswrapper}>
+						<AdsInArticle />
 					</div>
 				</div>
 			</div>
