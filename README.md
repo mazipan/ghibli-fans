@@ -8,6 +8,10 @@
 
 https://mazipan.github.io/ghibli-fans/
 
+## PWA Test
+
+https://www.webpagetest.org/result/180323_52_23b6fd1eccedf6ba9cae0540dcdb6143/
+
 ## API
 
 API made by [janaipakos](https://github.com/janaipakos/ghibliapi), see api docs [here](https://ghibliapi.herokuapp.com/)
