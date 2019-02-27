@@ -3,7 +3,7 @@ import style from "./style.less";
 import { Link } from "preact-router";
 
 import { connect } from "preact-redux";
-import { loadFilms } from "@/actions/";
+import { loadFilms } from "src/actions/";
 
 class Films extends Component {
 	componentDidMount() {

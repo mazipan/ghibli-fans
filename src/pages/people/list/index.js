@@ -1,7 +1,7 @@
 import { h, Component } from "preact";
 import style from "./style.less";
 
-import People from "components/people";
+import People from "src/components/people";
 
 export default class PeoplePage extends Component {
 	render() {

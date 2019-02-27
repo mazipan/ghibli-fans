@@ -2,7 +2,7 @@ import { h, Component } from "preact";
 import style from "./style.less";
 
 import { connect } from "preact-redux";
-import { loadLocationDetail } from "@/actions/";
+import { loadLocationDetail } from "src/actions/";
 
 class LocationDetail extends Component {
 	componentDidMount() {

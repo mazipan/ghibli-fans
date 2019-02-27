@@ -1,5 +1,5 @@
-import * as ActionTypes from "@/constant";
-import data from "@/data/people";
+import * as ActionTypes from "src/constant";
+import data from "src/data/people";
 
 export function person(state = {}, action) {
 	switch (action.type) {

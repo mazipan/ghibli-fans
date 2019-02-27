@@ -2,9 +2,9 @@ import { h, Component } from "preact";
 import style from "./style.less";
 
 import { connect } from "preact-redux";
-import { loadFilmDetail } from "@/actions/";
+import { loadFilmDetail } from "src/actions/";
 
-import { AdsInArticle } from "@/components/googleads/inarticle";
+import AdsInArticle from "src/components/googleads/inarticle";
 
 class FilmDetail extends Component {
 	componentDidMount() {

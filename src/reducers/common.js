@@ -1,4 +1,4 @@
-import * as ActionTypes from "@/constant";
+import * as ActionTypes from "src/constant";
 
 export function hasErrored(state = false, action) {
 	switch (action.type) {

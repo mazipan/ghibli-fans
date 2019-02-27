@@ -1,7 +1,7 @@
 import { h, Component } from "preact";
 import style from "./style.less";
 
-import Species from "components/species";
+import Species from "src/components/species";
 
 export default class SpeciesPage extends Component {
 	render() {

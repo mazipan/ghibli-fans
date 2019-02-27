@@ -3,7 +3,7 @@ import style from "./style.less";
 import { Link } from "preact-router";
 
 import { connect } from "preact-redux";
-import { loadSpecies } from "@/actions/";
+import { loadSpecies } from "src/actions/";
 
 class Species extends Component {
 	componentDidMount() {

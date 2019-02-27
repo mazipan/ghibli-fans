@@ -1,6 +1,9 @@
 # ghibli-fans
 
+[![Travis](https://img.shields.io/travis/mazipan/ghibli-fans.svg)](https://travis-ci.org/mazipan/ghibli-fans) [![Greenkeeper badge](https://badges.greenkeeper.io/mazipan/ghibli-fans.svg)](https://greenkeeper.io/)
+
 🐰 Browse film, character, etc from Ghibli Studio
+
 
 ![Ghibli-Fans](https://github.com/mazipan/ghibli-fans/blob/master/screenshoot.png?raw=true)
 
@@ -24,9 +27,9 @@ API made by [janaipakos](https://github.com/janaipakos/ghibliapi), see api docs 
 
 ## Disclaimer
 
-This repository was developed for learning purpose. 
+This repository was developed for learning purpose.
 You can read, copy, fork, distributed, etc for your learning proccess too.
-There is no purpose from Author to harm anyone. 
+There is no purpose from Author to harm anyone.
 
 ## Credit
 

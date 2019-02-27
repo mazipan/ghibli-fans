@@ -1,7 +1,7 @@
 import { h, Component } from "preact";
 import style from "./style.less";
 
-import Vehicles from "components/vehicles";
+import Vehicles from "src/components/vehicles";
 
 export default class VehiclesPage extends Component {
 	render() {

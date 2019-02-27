@@ -1,5 +1,5 @@
-import * as ActionTypes from "@/constant";
-import data from "@/data/film";
+import * as ActionTypes from "src/constant";
+import data from "src/data/film";
 
 export function film(state = {}, action) {
 	switch (action.type) {

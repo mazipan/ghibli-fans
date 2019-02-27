@@ -3,7 +3,7 @@ import style from "./style.less";
 import { Link } from "preact-router";
 
 import { connect } from "preact-redux";
-import { loadLocations } from "@/actions/";
+import { loadLocations } from "src/actions/";
 
 class Locations extends Component {
 	componentDidMount() {

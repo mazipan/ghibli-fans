@@ -2,7 +2,7 @@ import { h, Component } from "preact";
 import style from "./style.less";
 
 import { connect } from "preact-redux";
-import { loadPersonDetail } from "@/actions/";
+import { loadPersonDetail } from "src/actions/";
 
 class PersonDetail extends Component {
 	componentDidMount() {

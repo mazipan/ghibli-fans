@@ -1,6 +1,6 @@
-import { CALL_API } from "@/middleware/api";
-import { getCache } from "@/cache";
-import * as Constant from "@/constant";
+import { CALL_API } from "../middleware/api";
+import { getCache } from "../cache";
+import * as Constant from "../constant";
 
 // FILMS
 export const loadFilms = () => dispatch => {

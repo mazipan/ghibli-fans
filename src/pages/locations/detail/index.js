@@ -1,7 +1,7 @@
 import { h, Component } from "preact";
 import style from "./style.less";
 
-import LocationDetail from "components/locations/detail";
+import LocationDetail from "src/components/locations/detail";
 
 export default class LocationPage extends Component {
 	render() {

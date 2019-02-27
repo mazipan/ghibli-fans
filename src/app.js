@@ -6,23 +6,23 @@ import { Provider } from "preact-redux";
 import configureStore from "./store";
 const store = configureStore();
 
-import Header from "components/header";
-import Footer from "components/footer";
+import Header from "src/components/header";
+import Footer from "src/components/footer";
 
-import FilmsPage from "pages/films/list";
-import FilmPage from "pages/films/detail";
+import FilmsPage from "src/pages/films/list";
+import FilmPage from "src/pages/films/detail";
 
-import PeoplePage from "pages/people/list";
-import PersonPage from "pages/people/detail";
+import PeoplePage from "src/pages/people/list";
+import PersonPage from "src/pages/people/detail";
 
-import LocationsPage from "pages/locations/list";
-import LocationPage from "pages/locations/detail";
+import LocationsPage from "src/pages/locations/list";
+import LocationPage from "src/pages/locations/detail";
 
-import SpeciesPage from "pages/species/list";
-import SpeciesDetailPage from "pages/species/detail";
+import SpeciesPage from "src/pages/species/list";
+import SpeciesDetailPage from "src/pages/species/detail";
 
-import VehiclesPage from "pages/vehicles/list";
-import VehiclePage from "pages/vehicles/detail";
+import VehiclesPage from "src/pages/vehicles/list";
+import VehiclePage from "src/pages/vehicles/detail";
 
 export default class App extends Component {
 	state = {

@@ -1,7 +1,7 @@
 import { h, Component } from "preact";
 import style from "./style.less";
 
-import FilmDetail from "components/films/detail";
+import FilmDetail from "src/components/films/detail";
 
 export default class FilmPage extends Component {
 	render() {

@@ -3,7 +3,7 @@ import style from "./style.less";
 import { Link } from "preact-router";
 
 import { connect } from "preact-redux";
-import { loadPeople } from "@/actions/";
+import { loadPeople } from "src/actions/";
 
 class People extends Component {
 	componentDidMount() {

@@ -1,5 +1,5 @@
-import * as ActionTypes from "@/constant";
-import data from "@/data/vehicle";
+import * as ActionTypes from "src/constant";
+import data from "src/data/vehicle";
 
 export function vehicle(state = {}, action) {
 	switch (action.type) {
