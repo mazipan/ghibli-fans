@@ -40,8 +40,7 @@
     "preact-async-route": "^2.2.1",
     "preact-compat": "3.18.4",
     "preact-redux": "2.0.3",
-    "preact-router": "2.6.1",
-    "react-router-dom": "^5.0.0",
+    "preact-router": "^2.6.1",
     "redux": "4.0.1",
     "redux-thunk": "2.3.0"
   },
