@@ -1,6 +1,7 @@
 import { h, Component } from "preact";
 import style from "./style.less";
-import { Link } from "preact-router/match";
+
+import { NavLink } from 'react-router-dom'
 
 export default class Footer extends Component {
 	render() {
@@ -8,34 +9,34 @@ export default class Footer extends Component {
 			<footer class={style.footer}>
 				<nav>
 					<div class={style.link}>
-						<Link activeClassName={style.active} href="/">
+						<NavLink activeClassName={style.active} to="/">
 							<i class="fa fa-film" />
 							<div class={style.text}>Films</div>
-						</Link>
+						</NavLink>
 					</div>
 					<div class={style.link}>
-						<Link activeClassName={style.active} href="/people/">
+						<NavLink activeClassName={style.active} to="/people/">
 							<i class="fa fa-users" />
 							<div class={style.text}>People</div>
-						</Link>
+						</NavLink>
 					</div>
 					<div class={style.link}>
-						<Link activeClassName={style.active} href="/locations">
+						<NavLink activeClassName={style.active} to="/locations">
 							<i class="fa fa-map-o" />
 							<div class={style.text}>Locations</div>
-						</Link>
+						</NavLink>
 					</div>
 					<div class={style.link}>
-						<Link activeClassName={style.active} href="/species/">
+						<NavLink activeClassName={style.active} to="/species/">
 							<i class="fa fa-reddit-alien" />
 							<div class={style.text}>Species</div>
-						</Link>
+						</NavLink>
 					</div>
 					<div class={style.link}>
-						<Link activeClassName={style.active} href="/vehicles">
+						<NavLink activeClassName={style.active} to="/vehicles">
 							<i class="fa fa-car" />
 							<div class={style.text}>Vehicles</div>
-						</Link>
+						</NavLink>
 					</div>
 				</nav>
 			</footer>

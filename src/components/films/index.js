@@ -1,6 +1,6 @@
 import { h, Component } from "preact";
 import style from "./style.less";
-import { Link } from "preact-router";
+import { NavLink } from 'react-router-dom';
 
 import { connect } from "preact-redux";
 import { loadFilms } from "src/actions/";
@@ -15,7 +15,7 @@ class Films extends Component {
 			<ul class={style.films}>
 				{this.props.films.map(item => (
 					<li key={item.id} class={style.film}>
-						<Link href={`/films/${item.id}`} class={style.card}>
+						<NavLink to={`/films/${item.id}`} class={style.card}>
 							<div class={style.card__left}>
 								<img src={item.image} />
 							</div>
@@ -26,7 +26,7 @@ class Films extends Component {
 									<span class={style.text}>({item.release_date})</span>
 								</div>
 							</div>
-						</Link>
+						</NavLink>
 					</li>
 				))}
 			</ul>
