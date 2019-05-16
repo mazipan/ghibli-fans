@@ -1,6 +1,6 @@
 # ghibli-fans
 
-[![Travis](https://img.shields.io/travis/mazipan/ghibli-fans.svg)](https://travis-ci.org/mazipan/ghibli-fans) [![Greenkeeper badge](https://badges.greenkeeper.io/mazipan/ghibli-fans.svg)](https://greenkeeper.io/)
+[![Travis](https://img.shields.io/travis/mazipan/ghibli-fans.svg)](https://travis-ci.org/mazipan/ghibli-fans) ![Dependencies](https://img.shields.io/david/mazipan/ghibli-fans.svg)
 
 🐰 Browse film, character, etc from Ghibli Studio
 
