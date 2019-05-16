@@ -1,6 +1,6 @@
 import { h, Component } from "preact";
-import { Router } from "preact-router";
-import AsyncRoute from 'preact-async-route';
+
+import { Switch, Route } from 'react-router-dom';
 
 import { Provider } from "preact-redux";
 import configureStore from "./store";
@@ -10,6 +10,7 @@ import Header from "src/components/header";
 import Footer from "src/components/footer";
 
 import FilmsPage from "src/pages/films/list";
+import FilmsDetailPage from "src/pages/films/detail";
 
 // const createHashHistory = require("history").createHashHistory;
 export default class App extends Component {
@@ -30,60 +31,11 @@ export default class App extends Component {
 				<div id="app">
 					<Header appName={this.state.appName} />
 
-					<Router>
-						<FilmsPage path="/" />
-						<FilmsPage path="/films" />
-
-						<AsyncRoute
-							path="/films/:id"
-							getComponent={ () => import('../src/pages/films/detail').then(module => module.default) }
-							loading={ () => <div>loading...</div> }
-						/>
-
-						<AsyncRoute
-							path="/people"
-							getComponent={ () => import('../src/pages/people/list').then(module => module.default) }
-							loading={ () => <div>loading...</div> }
-						/>
-						<AsyncRoute
-							path="/people/:id"
-							getComponent={ () => import('../src/pages/people/detail').then(module => module.default) }
-							loading={ () => <div>loading...</div> }
-						/>
-
-						<AsyncRoute
-							path="/locations"
-							getComponent={ () => import('../src/pages/locations/list').then(module => module.default) }
-							loading={ () => <div>loading...</div> }
-						/>
-						<AsyncRoute
-							path="/locations/:id"
-							getComponent={ () => import('../src/pages/locations/detail').then(module => module.default) }
-							loading={ () => <div>loading...</div> }
-						/>
-
-						<AsyncRoute
-							path="/species"
-							getComponent={ () => import('../src/pages/species/list').then(module => module.default) }
-							loading={ () => <div>loading...</div> }
-						/>
-						<AsyncRoute
-							path="/species/:id"
-							getComponent={ () => import('../src/pages/species/detail').then(module => module.default) }
-							loading={ () => <div>loading...</div> }
-						/>
-
-						<AsyncRoute
-							path="/vehicles"
-							getComponent={ () => import('../src/pages/vehicles/list').then(module => module.default) }
-							loading={ () => <div>loading...</div> }
-						/>
-						<AsyncRoute
-							path="/vehicles/:id"
-							getComponent={ () => import('../src/pages/vehicles/detail').then(module => module.default) }
-							loading={ () => <div>loading...</div> }
-						/>
-					</Router>
+					<Switch>
+						<Route exact path='/' component={FilmsPage}/>
+						<Route exact path='/films' component={FilmsPage}/>
+						<Route exact path='/films/:id' component={FilmsDetailPage}/>
+					</Switch>
 
 					<Footer appName={this.state.appName} />
 				</div>
