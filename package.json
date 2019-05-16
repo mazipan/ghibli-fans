@@ -6,7 +6,7 @@
   "license": "MIT",
   "author": "Irfan Maulana <https://github.com/mazipan>",
   "scripts": {
-    "build": "preact build --no-prerender --template src/template.html",
+    "build": "preact build --no-prerender --template src/template.html && cp ./public/404.html ./build",
     "dev": "preact watch --template src/template.html",
     "lint": "eslint src --fix",
     "test": "jest"
@@ -37,6 +37,7 @@
   "dependencies": {
     "history": "4.9.0",
     "preact": "8.4.2",
+    "preact-async-route": "^2.2.1",
     "preact-compat": "3.18.4",
     "preact-redux": "2.0.3",
     "preact-router": "2.6.1",
