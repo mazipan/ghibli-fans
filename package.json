@@ -41,7 +41,7 @@
     "preact-compat": "3.19.0",
     "preact-redux": "2.1.0",
     "preact-router": "2.6.1",
-    "redux": "4.0.1",
+    "redux": "4.0.4",
     "redux-thunk": "2.3.0"
   },
   "jest": {
