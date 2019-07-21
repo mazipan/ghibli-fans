@@ -23,7 +23,7 @@
   "devDependencies": {
     "eslint": "6.1.0",
     "eslint-config-synacor": "3.0.4",
-    "eslint-plugin-jest": "22.12.0",
+    "eslint-plugin-jest": "22.13.0",
     "eslint-plugin-react": "7.14.2",
     "gh-pages": "2.0.1",
     "identity-obj-proxy": "3.0.0",
