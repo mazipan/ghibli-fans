@@ -28,7 +28,7 @@
     "gh-pages": "2.1.1",
     "identity-obj-proxy": "3.0.0",
     "jest": "24.9.0",
-    "less": "3.9.0",
+    "less": "3.10.0",
     "less-loader": "5.0.0",
     "per-env": "1.0.2",
     "preact-cli": "2.2.1",
