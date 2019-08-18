@@ -6018,10 +6018,10 @@ less-loader@5.0.0:
     loader-utils "^1.1.0"
     pify "^4.0.1"
 
-less@3.10.0:
-  version "3.10.0"
-  resolved "https://registry.yarnpkg.com/less/-/less-3.10.0.tgz#1150f727651908516fd4b47133a8469b29b6c5ce"
-  integrity sha512-+QCSP4vXVCXVqYSzqdT4eLoEK/hSFxFfD29E71+cRFKdLsCDMQ56yEU+fmpHebhmznA/9g9oXtvXN9foCOeIjg==
+less@3.10.1:
+  version "3.10.1"
+  resolved "https://registry.yarnpkg.com/less/-/less-3.10.1.tgz#a1c97e3436acdfd1757916333b9906f3af7d559e"
+  integrity sha512-xlPx6vt5nAm1DGDnuv06SNQba4WnMKY5vZkgCrnyKXkDbs09kl9cc2nSS7OMufLT60IWsxUSnwr1Rkh4rkMFcg==
   dependencies:
     clone "^2.1.2"
   optionalDependencies:
