@@ -21,7 +21,7 @@
     "build/*"
   ],
   "devDependencies": {
-    "eslint": "6.2.1",
+    "eslint": "6.2.2",
     "eslint-config-synacor": "3.0.4",
     "eslint-plugin-jest": "22.15.2",
     "eslint-plugin-react": "7.14.3",
