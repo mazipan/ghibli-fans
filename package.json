@@ -27,7 +27,7 @@
     "eslint-plugin-react": "7.18.1",
     "gh-pages": "2.2.0",
     "identity-obj-proxy": "3.0.0",
-    "jest": "24.9.0",
+    "jest": "25.1.0",
     "less": "3.10.3",
     "less-loader": "5.0.0",
     "per-env": "1.0.2",
